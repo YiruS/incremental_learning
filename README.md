@@ -78,5 +78,8 @@
   
   ![Alt text](/images/FHMM_tree_example.png?raw=true "FHMM tree") 
   
-    
+  ## [Online Segmentation and Clustering From Continuous Observation of Whole Body Motions.](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5175268)
+  
+  Notes: Observed time series data is **automatically** segmented into motion segments by **building HMM over a window of previous observations** and finding the optimum state sequence over the model. => Optimum state sequence is the desired segmentation. 
+  Clustering is used the same method in *Incremental Learning,Clustering and Hierarchy Formation of Whole Body Motion Patterns using Adaptive Hidden Markov Chains.*
   
