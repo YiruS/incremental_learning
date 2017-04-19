@@ -19,7 +19,6 @@
   ![Alt text](/images/overview.png?raw=true "Overview")
   * Updating topological map (instantaneous topological map ITM) 
   ![Alt text](/images/ITM.png?raw=true "Overview") 
-  <a href="url"><img src="https://github.com/YiruS/incremental_learning/tree/master/images/ITM.png" align="left" height="48" width="48" ></a>
 
   * Updating structure
     1. For new node i, initialize prior i and self-transition a_i,i and state transition a_i,j, a_j,i.
@@ -31,6 +30,5 @@
   * Updating parameters
   
     ![Alt text](/images/params.png?raw=true "Update Parameters") 
-    <a href="url"><img src="https://github.com/YiruS/incremental_learning/tree/master/images/params.png" align="left" height="48" width="48" ></a>
   
   
