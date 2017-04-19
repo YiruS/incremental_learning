@@ -18,7 +18,7 @@
  
   ![Alt text](/images/overview.png?raw=true "Overview")
   * Updating topological map (instantaneous topological map ITM) 
-  ![Alt text](/images/ITM.png?raw=true "Overview" =20*20) 
+  ![Alt text](/images/ITM.png?raw=true "Overview") 
   ![](/images/ITM.png =100x20)
 
   * Updating structure
@@ -30,7 +30,7 @@
   
   * Updating parameters
   
-    ![Alt text](/images/params.png?raw=true "Update Parameters" =20*20) 
+    ![Alt text](/images/params.png?raw=true "Update Parameters") 
     ![](/images/params.png =100x20)
 
   
