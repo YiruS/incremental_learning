@@ -17,8 +17,8 @@ HMM based incremental learning
   Assump3 is the most important, which allows to use observation sequence for adapting HMM structure(#states, state transition, emission).
   
   ### Three Updates
-  
-  ![alt tag](https://github.com/YiruS/incremental_learning/tree/master/images/overview.png)
+ 
+  ![Alt text](/images/overview.png?raw=true "Overview")
   * Updating topological map (instantaneous topological map ITM) 
 
   * Updating structure
