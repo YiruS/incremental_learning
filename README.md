@@ -31,7 +31,7 @@
   * Updating parameters
   
     ![Alt text](/images/params.png?raw=true "Update Parameters") 
-    ![](/images/params.png =100x20)
+    ![image](/images/params.png =100x20)
 
   
   
