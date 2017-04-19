@@ -2,7 +2,7 @@
 HMM based incremental learning
 
 
-##1. [Growing Hidden Markov Models: AN Incremental Tool for Learning and Predicting Human and Vehicle Motion.](http://journals.sagepub.com/doi/pdf/10.1177/0278364909342118)
+## 1. [Growing Hidden Markov Models: AN Incremental Tool for Learning and Predicting Human and Vehicle Motion.](http://journals.sagepub.com/doi/pdf/10.1177/0278364909342118)
 
   Notes: This paper learns incrementally both the **stucture** and **parameters** of HMM.
   
@@ -16,8 +16,9 @@ HMM based incremental learning
   
   Assump3 is the most important, which allows to use observation sequence for adapting HMM structure(#states, state transition, emission).
   
-  ###Three Updates
-  ![alt text](https://github.com/YiruS/incremental_learning/images/overview.png "Overview")
+  ### Three Updates
+  
+  ![alt text](https://github.com/YiruS/incremental_learning/tree/master/images/overview.png "Overview")
 
   * Updating topological map (instantaneous topological map ITM) 
 
@@ -30,7 +31,7 @@ HMM based incremental learning
   
   * Updating parameters
   
-  ![alt text](https://github.com/YiruS/incremental_learning/images/params.png "Update parameters")
+  ![alt text](https://github.com/YiruS/incremental_learning/tree/master/images/params.png "Update parameters")
 
   
   
