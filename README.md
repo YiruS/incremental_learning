@@ -30,7 +30,7 @@ HMM based incremental learning
   
   * Updating parameters
   
-    ![alt tag](https://github.com/YiruS/incremental_learning/tree/master/images/params.png)
+    ![Alt tag](https://github.com/YiruS/incremental_learning/tree/master/images/params.png)
 
   
   
