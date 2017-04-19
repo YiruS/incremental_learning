@@ -18,6 +18,7 @@
  
   ![Alt text](/images/overview.png?raw=true "Overview")
   * Updating topological map (instantaneous topological map ITM) 
+  ![Alt text](/images/ITM.png?raw=true "Overview")
 
   * Updating structure
     1. For new node i, initialize prior i and self-transition a_i,i and state transition a_i,j, a_j,i.
