@@ -66,10 +66,10 @@
     
     4. In the case of a new motion pattern which is completely dissimilar to any existing motion patterns, the motion pattern will be placed into the root node.
     
-  ** When a new observation sequence is added to a cluster, a clustering procedure is invoked on that group, to determine if a subgroup may be formed.**
+  **When a new observation sequence is added to a cluster, a clustering procedure is invoked on that group, to determine if a subgroup may be formed.**
   If so, a new group model is trained using the raw observation sequences from all the group elements. The structure of the new group model is determined based on the maximum intra observation distance for group, D_max. **Additional chains** are added based on a simple threshold evaluation.
   
-  ** Evaluations.**
+  **Evaluations.**
   
   1. Compare log likelihood of HMM and FHMM for data of the same motion type in training set, the same motion outside the training set, and of a different motion. (Useful comparison, can be used in my paper.)
   2. Compare FHMM with two independent HMM chains, proving FHMM is not simply the combined two independent HMM chains. Instead, chains in FHMM are dependent on the observation, which makes it powerful obtaining data/observation characteristics. 
