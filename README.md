@@ -56,7 +56,7 @@
   Following is the pseudocode for clustering.
   ![Alt text](/images/FHMM_pseudocode.png?raw=true "FHMM clustering") 
   
-  # When comparing model distance (case b and case c in last figure), there are four conditions:
+  **When comparing model distance (case b and case c in last figure), there are four conditions:**
   
     1. If the distance between the new observation (encoded by an HMM) and the cluster (encoded by FHMM or HMM, depending on data complexity) is larger than Dthresh, this cluster will not be considered as a possible match for the new observation sequence. 
     
@@ -66,7 +66,7 @@
     
     4. In the case of a new motion pattern which is completely dissimilar to any existing motion patterns, the motion pattern will be placed into the root node.
     
-  ** When a new observation sequence is added to a cluster, a clustering procedure is invoked on that group, to determine if a subgroup may be formed. **
+  ** When a new observation sequence is added to a cluster, a clustering procedure is invoked on that group, to determine if a subgroup may be formed.**
   If so, a new group model is trained using the raw observation sequences from all the group elements. The structure of the new group model is determined based on the maximum intra observation distance for group, D_max. **Additional chains** are added based on a simple threshold evaluation.
   
   ** Evaluations.**
