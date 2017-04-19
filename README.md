@@ -75,6 +75,7 @@
   2. Compare FHMM with two independent HMM chains, proving FHMM is not simply the combined two independent HMM chains. Instead, chains in FHMM are dependent on the observation, which makes it powerful obtaining data/observation characteristics. 
   
   Following is an example of tree structure of 9 motions.
+  
   ![Alt text](/images/FHMM_tree_example.png?raw=true "FHMM tree") 
   
     
