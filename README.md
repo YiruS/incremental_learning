@@ -18,8 +18,7 @@ HMM based incremental learning
   
   ### Three Updates
   
-  ![alt tage](https://github.com/YiruS/incremental_learning/tree/master/images/overview.png "Overview")
-
+  ![alt tag](https://github.com/YiruS/incremental_learning/tree/master/images/overview.png)
   * Updating topological map (instantaneous topological map ITM) 
 
   * Updating structure
@@ -31,7 +30,7 @@ HMM based incremental learning
   
   * Updating parameters
   
-  ![alt tag](https://github.com/YiruS/incremental_learning/tree/master/images/params.png "Update parameters")
+    ![alt tag](https://github.com/YiruS/incremental_learning/tree/master/images/params.png)
 
   
   
