@@ -1,6 +1,4 @@
-# incremental_learning
-HMM based incremental learning
-
+# HMM based Incremental Learning
 
 ## [Growing Hidden Markov Models: AN Incremental Tool for Learning and Predicting Human and Vehicle Motion.](http://journals.sagepub.com/doi/pdf/10.1177/0278364909342118)
 
@@ -30,7 +28,7 @@ HMM based incremental learning
   
   * Updating parameters
   
-    ![Alt tag](https://github.com/YiruS/incremental_learning/tree/master/images/params.png)
+    ![Alt text](/images/params.png?raw=true "Update Parameters")
 
   
   
