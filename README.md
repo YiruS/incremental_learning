@@ -32,13 +32,12 @@
   
     ![Alt text](/images/params.png?raw=true "Update Parameters") 
   
-  ======
   ## [Incremental Learning,Clustering and Hierarchy Formation of Whole Body Motion Patterns using Adaptive Hidden Markov Chains.](http://journals.sagepub.com/doi/pdf/10.1177/0278364908091153)
 
   Notes: Autonomous and incremental learning of motion pattern from human motions using Factorial HMMs.
   1. The model size (#chains in FHMM) is adaptable based on density of the motion data in the regions.
   
-  2. As new motion patterns (data) are observed, they are incrementally grouped together using # hierarchical agglomerative clustering # based on their relative distance in the model space. The clustering algorithm forms a # tree structure #, with specialized motions at the tree leaves, and generalized motions closer to the root. The generated tree structure will depend on the type of training data provided, so that the most specialized motions will be those for which the most training has been received.
+  2. As new motion patterns (data) are observed, they are incrementally grouped together using **hierarchical agglomerative clustering** based on their relative distance in the model space. The clustering algorithm forms a # tree structure #, with specialized motions at the tree leaves, and generalized motions closer to the root. The generated tree structure will depend on the type of training data provided, so that the most specialized motions will be those for which the most training has been received.
   
   ![Alt text](/images/FHMM_overview.png?raw=true "FHMM overview") 
   
@@ -53,3 +52,29 @@
   (e) a new subgroup is formed from similar motions in the modified group
   
   (f) the subgroup is added to the tree as a child of the modified group.
+  
+  Following is the pseudocode for clustering.
+  ![Alt text](/images/FHMM_pseudocode.png?raw=true "FHMM clustering") 
+  
+  # When comparing model distance (case b and case c in last figure), there are four conditions:
+  
+    1. If the distance between the new observation (encoded by an HMM) and the cluster (encoded by FHMM or HMM, depending on data complexity) is larger than Dthresh, this cluster will not be considered as a possible match for the new observation sequence. 
+    
+    2. If there are multiple candidate clusters, the new sequence is placed in the closest cluster. 
+    
+    3. If there are no candidates, the new sequence is placed in the parent cluster. 
+    
+    4. In the case of a new motion pattern which is completely dissimilar to any existing motion patterns, the motion pattern will be placed into the root node.
+    
+  # When a new observation sequence is added to a cluster, a clustering procedure is invoked on that group, to determine if a subgroup may be formed. 
+  If so, a new group model is trained using the raw observation sequences from all the group elements. The structure of the new group model is determined based on the maximum intra observation distance for group, D_max. **Additional chains** are added based on a simple threshold evaluation.
+  
+  # Evaluations.
+  
+  1. Compare log likelihood of HMM and FHMM for data of the same motion type in training set, the same motion outside the training set, and of a different motion. (Useful comparison, can be used in my paper.)
+  2. Compare FHMM with two independent HMM chains, proving FHMM is not simply the combined two independent HMM chains. Instead, chains in FHMM are dependent on the observation, which makes it powerful obtaining data/observation characteristics. 
+  Following is an example of tree structure of 9 motions.
+  ![Alt text](/images/FHMM_tree_example.png?raw=true "FHMM tree") 
+  
+    
+  
