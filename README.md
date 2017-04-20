@@ -72,7 +72,7 @@
   **Evaluations.**
   
   1. Compare log likelihood of HMM and FHMM for data of the same motion type in training set, the same motion outside the training set, and of a different motion. (Useful comparison, can be used in my paper.)
-  2. Compare FHMM with two independent HMM chains, proving FHMM is not simply the combined two independent HMM chains. Instead, chains in FHMM are dependent on the observation, which makes it powerful obtaining data/observation characteristics. 
+  2. Compare FHMM with two independent HMMs (with one independent HMM trained on the training data set, and the second independent HMM trained on the error between the data set and the output of the first HMM), proving FHMM is not simply the combined two independent HMM chains. Instead, chains in FHMM are dependent on the observation, which makes it powerful obtaining data/observation characteristics. 
   
   Following is an example of tree structure of 9 motions.
   
