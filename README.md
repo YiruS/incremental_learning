@@ -83,3 +83,7 @@
   Notes: Observed time series data is **automatically** segmented into motion segments by **building HMM over a window of previous observations** and finding the optimum state sequence over the model. => Optimum state sequence is the desired segmentation. 
   Clustering is used the same method in *Incremental Learning,Clustering and Hierarchy Formation of Whole Body Motion Patterns using Adaptive Hidden Markov Chains.*
   
+  ## [Incremental Learning of Human Behaviors using Hierarchical Hidden Markov Models.](http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5650813)
+  
+  Notes: First, movement primitives (low level motions) are autonomously segmented and incrementally learned. At the same time, higher abstraction level HMM is learned, incorporating relation between motion primitives (prior, state transition). It is the incremental learning for **higher order HMM**. 
+  
